@@ -9,6 +9,10 @@ public class ArrayList1 {
         arr.add(7);
         arr.add(10);
         arr.add(15);
-        System.out.println(arr);
+        for(Integer a:arr)
+        {
+            System.out.println(a);
+        }
+        
     }
 }
