@@ -1,0 +1,37 @@
+package day10;
+
+public class Dequeue {
+    int front=-1;
+    int rear=-1;
+    int arr[]=new int[5];
+    void enqueue(int data){
+        if(rear==arr.length-1){
+            System.out.println("Queue is full");
+            return;
+        }
+        if(front==-1){
+            front=0;
+        }
+            rear++;
+            arr[rear]=data;
+            System.out.println(arr[rear]+" -> inserted");
+        }
+
+        void dequeue(){
+            if(front==-1 || front>rear){
+                System.out.println("Queue is empty");
+                return;
+            }
+            System.out.println(arr[front]+" -> removed");
+            front++;
+        }
+        public static void main(String[] args) {
+            Dequeue q=new Dequeue();
+            q.enqueue(70);
+            q.enqueue(785);
+            q.enqueue(455);
+            q.dequeue();
+            q.dequeue();
+        }
+    }
+
