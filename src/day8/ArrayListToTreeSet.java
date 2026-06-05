@@ -15,7 +15,7 @@ public class ArrayListToTreeSet {
         list.add(10);
 
         // Convert ArrayList to TreeSet
-        TreeSet<Integer> set = new TreeSet<>(list);LinkedListToArrayList
+        TreeSet<Integer> set = new TreeSet<>(list);
 
         System.out.println("ArrayList : " + list);
         System.out.println("TreeSet   : " + set);
